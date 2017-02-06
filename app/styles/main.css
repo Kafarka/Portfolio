@@ -1,0 +1,42 @@
+#home {
+  background: url("https://images.unsplash.com/photo-1476733419970-c703149c016b?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=") no-repeat center center fixed;
+  background-size: cover;
+  height: 90vh;
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+h1 {
+	margin-top: 300px;
+}
+
+h2 {
+	margin-top: 0px;
+	font-size: 50px;
+
+}
+h3 {
+	font-size: 50px;
+
+}
+#big{
+	font-size: 50px;
+	margin-top: 50px;
+}
+#card{
+	margin-left: 150px;
+	margin-right: 150px;
+}
+#cardtitle{
+	font-size: 40px;
+}
+#icons{
+	font-size: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: grey-text text-darken-2;
+}
+
+#contact{
+		font-size: 30px;
+}
