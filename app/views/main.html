@@ -1,73 +1,69 @@
-<a id="top"> </a>
+<div id="top"></div>
+
 <div id="home" class="row" align="center">
-<div class="col s12">
-  <h2 class="grey-text text-darken-3" style="visibility: hidden;">t</h2>
-  <h1 class="grey-text text-darken-4">Magdalena Kafara</h1>
-  <p id="icons"><i class="fa fa-bomb" aria-hidden="true"></i><i class="fa fa-code" aria-hidden="true"></i><i class="fa fa-television" aria-hidden="true"></i><i class="fa fa-users" aria-hidden="true"></i></p>
-  <h3 class="grey-text text-darken-4">Front-End Developer</h3>
+  <div class="col s12">
+    <h2 class="grey-text text-darken-3" style="visibility: hidden;">t</h2>
+    <h1 class="grey-text text-darken-4">Magdalena Kafara</h1>
+    <p id="icons">
+      <i class="fa fa-bomb" aria-hidden="true"></i>
+      <i class="fa fa-code" aria-hidden="true"></i>
+      <i class="fa fa-television" aria-hidden="true"></i>
+      <i class="fa fa-users" aria-hidden="true"></i>
+    </p>
+    <h3 class="grey-text text-darken-4">Front-End Developer</h3>
+  </div>
 </div>
-</div>
 
+<div id="work" class="scrollspy"></div>
+<p class="big" align="center">
+  <i class="fa fa-code" aria-hidden="true"></i>
+  The work that kept me busy.
+</p>
 
-  <a id="work" class="scrollspy"> </a>
-  <p id="big" align="center"><i class="fa fa-code" aria-hidden="true"></i>
-The work that kept me busy.</p>
-
-  <div class="row" id="card">
-    <div ng-repeat="card in cards" class="col s12 m6 hoverable">
-     <h2 id="cardtitle" class="header">{{card.cardTitle}}</h2>
+<div class="row">
+  <div ng-repeat="card in cards" class="col s12 m6 offset-m3">
+    <h2 class="header">{{card.cardTitle}}</h2>
       <div class="card horizontal">
         <div class="card-image">
-              <img ng-src="{{card.imgSrc}}">
+          <img src="{{card.imgSrc}}">
         </div>
-        <div class="card-stacked">
-          <div class="card-content">
-          <p>{{card.cardContent}}</p>
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>{{card.cardContent}}</p>
+            </div>
+              <div class="card-action">
+                <a target="_blank" href="{{card.link}}">{{card.linkTitle}}</a>
+              </div>
           </div>
-          <div class="card-action">
-          <a ui-sref="me" style="visibility: hidden;">This is a link</a>
-         </div>
-        </div>
-     </div>
-    </div>
+       </div>
   </div>
+</div>
 <div style="height: 200px;"></div>
 
-
 <div class="row" align="center">
-<div class="col s6 offset-s3">
-  <a id="me" class="scrollspy"> </a>
-    <p id="big" align="center"><i class="fa fa-heart-o" aria-hidden="true"></i>   Get to know me</p>
-    <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Education</h4>
-      <p id="text">I'm an Edinburgh-based web developer with an eye for code, a knack for content, and a love of clean, simple, user-friendly design. I am a self-taught programmer. Programming has helped me to understand how to break the complicated problems into solvable subparts and how to work with data. I am determined to achieve my goals and I know that if I wish to achieve them then I will need to work hard.</p>
-    <h4><i class="fa fa-laptop" aria-hidden="true"></i>   Technical Toolbox</h4>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  Angular.js</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  JavaScript</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  HTML</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  Bootstrap</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  Materialize</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  CSS</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  Ajax and APIs</p>
-      <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i>  CSS</p>
+  <div class="col s6 offset-s3">
+    <div id="me" class="scrollspy"> </div>
+      <p class="big" align="center"><i class="fa fa-heart-o" aria-hidden="true"></i>   Get to know me</p>
+        <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>  Education</h4>
+          <p id="text">I'm an Edinburgh-based web developer with an eye for code, a knack for content, and a love of clean, simple, user-friendly design. I am a self-taught programmer. Programming has helped me to understand how to break the complicated problems into solvable subparts and how to work with data. I am determined to achieve my goals and I know that if I wish to achieve them then I will need to work hard.</p>
+        <h4><i class="fa fa-laptop" aria-hidden="true"></i>   Technical Toolbox</h4>
+          <div ng-repeat="tool in tools">
+            <p id="text"><i class="fa fa-check-circle" aria-hidden="true"></i> {{tool.text}}</p>
+          </div>
 
+        <h4><i class="fa fa-music" aria-hidden="true"></i>  Drums</h4>
+          <p id="text">Having fun and playing some African rhythms? That's something for me. Since I've started playing drums I'm in love with it. I'm proud owner of my own djembe. I like when I can relax while learning new rythms.</p>
+        <h4><i class="fa fa-heartbeat" aria-hidden="true"></i>  Yoga</h4>
+          <p id="text">I devote time to keep my body healthy and in shape. I enjoy keeping active through yoga classes,  I have joined yoga society and I  practice a lot at home.</p>
+        <h4><i class="fa fa-leaf" aria-hidden="true"></i>  Nutrition</h4>
+          <p id="text">Friends can see how passionate I am about health and often they ask me about  advice. I am aware of the importance of the proper nutrition and how relevant it is to our everyday lives. It helps us to function efficiently, think clearly, and allows us to do the things we love.</p>
+          <div style="height: 200px;"></div>
 
-
-    <h4><i class="fa fa-music" aria-hidden="true"></i>  Drums</h4>
-      <p id="text">Having fun and playing some African rhythms? That's something for me. Since I've started playing drums I'm in love with it. I'm proud owner of my own djembe. I like when I can relax while learning new rythms.</p>
-    <h4><i class="fa fa-heartbeat" aria-hidden="true"></i>  Yoga</h4>
-      <p id="text">I devote time to keep my body healthy and in shape. I enjoy keeping active through yoga classes,  I have joined yoga society and I  practice a lot at home.</p>
-    <h4><i class="fa fa-leaf" aria-hidden="true"></i>  Nutrition</h4>
-      <p id="text">Friends can see how passionate I am about health and often they ask me about  advice. I am aware of the importance of the proper nutrition and how relevant it is to our everyday lives. It helps us to function efficiently, think clearly, and allows us to do the things we love.</p>
-      <div style="height: 200px;"></div>
-
-
-
-  <a id="contact" class="scrollspy"></a>
-    <p id="big">Contact</p>
+      <a id="contact" class="scrollspy"></a>
+      <p class="big">Contact</p>
       <div id="contact">
-        <a class="grey-text text-darken-4" href="mailto:magdalena.kafara@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>   Email Me</a> 
-        <p><i class="fa fa-phone" aria-hidden="true"></i>Telephone: 07563838777</p> 
+        <a class="grey-text text-darken-4" href="mailto:magdalena.kafara@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>   Email Me</a>
       </div>
-  <div style="height: 200px;"></div>
-</div>
+      <div style="height: 200px;"></div>
+  </div>
 </div>
